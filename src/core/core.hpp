@@ -1,7 +1,6 @@
 #pragma once
 
 #include <algorithm>
-#include <bits/sockaddr.h>
 #include <cerrno>
 #include <chrono>
 #include <condition_variable>

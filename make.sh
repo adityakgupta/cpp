@@ -17,6 +17,6 @@ rm -f "$DIR/../compile_commands.json"
 rm -rf "$DIR"
 
 cmake -S . -B "$DIR" -G Ninja -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE="$BUILD_TYPE" > /dev/null 2>&1
-cmake --build "$DIR" --parallel > /dev/null 2>&1
-
 cp "$DIR/compile_commands.json" "$DIR/../compile_commands.json"
+
+cmake --build "$DIR" --parallel > /dev/null 2>&1
